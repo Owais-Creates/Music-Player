@@ -88,3 +88,15 @@ audioPlayer.addEventListener('ended', () => {
 
 //looping functionality.
 
+// Loop button logic
+loopBtn.addEventListener('click', () => {
+    // Toggle looping
+    audioPlayer.loop = !audioPlayer.loop;
+    
+    // Update button icon
+    if (audioPlayer.loop) {
+        loopBtn.classList.add("active");
+    } else {
+        loopBtn.classList.remove("active");
+    }
+});
