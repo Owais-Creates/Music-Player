@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+</head>
+
+<body>
+
+
+    <div id="main">
+        <div id="main-container">
+
+            <h1>Music Player</h1>
+            <h2>Song Name</h2>
+            <img id="song-image" src="" alt="">
+            <p id="song-title">Names</p>
+
+            <div id="btn-container">
+                <button id="prev" class="btn"><i class="ph-bold ph-skip-back"></i></button>
+                <button id="play" class="btn"><i id="play-pause-icon" class="ph-bold ph-play"></i></button>
+                <button id="next" class="btn"><i class="ph-bold ph-skip-forward"></i></button>
+                <button id="loop" class="btn"><i class="ph-bold ph-repeat"></i></button>
+            </div>
+        </div>
+
+        <h3>CONTROLS</h3>
+
+        <!-- Audio element with controls -->
+        <audio id="audio-player" controls>
+
+            <!-- Add source elements for each song -->
+            <source src="./sounds/BadeMiya.mp3" type="audio/mpeg">
+            <source src="./sounds/AeWatan.mp3" type="audio/mpeg">
+
+        </audio>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
